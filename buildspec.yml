@@ -10,7 +10,7 @@ phases:
       - npm -v
   build:
     commands:
-      - sh deploy.sh $REGION $STACKNAME
+      - bash -x deploy.sh $REGION $STACKNAME
       - echo "teste" >> elb.txt
   post_build:
     commands:
